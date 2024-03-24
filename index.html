@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P_M</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+          .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 8%;
+    width: 100%;
+    background-color: rgb(21, 21, 22);
+    color: white;
+    text-align: center;
+    }
+    
+    
+ /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #d1caca;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #0f0e0e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-style: italic;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.box {
+  width: 600px;
+  height: 330px;
+  border: 1px solid   rgb(247, 246, 248);
+  padding: 10px;
+  margin: 10px;
+  float: left;
+}
+
+.box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 330px;
+  border: 1px solid    rgb(247, 246, 248);
+  padding: 10px;
+  margin: 10px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%; /* Making it a circle */
+  border: 5px solid #fff; /* Add border if needed */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow if needed */
+}
+
+h1{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  font-weight: bolder;
+}
+
+h2{
+    font-family: cursive;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  font-weight: lighter;
+}
+
+
+.fa{
+    font-size: 20px;
+    margin: 30px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+}
+
+.bubble {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: rgb(250, 16, 16);
+  border-radius: 50%;
+  animation: float 5s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+    </style>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+  createBubbles();
+});
+
+function createBubbles() {
+  const container = document.querySelector('.container');
+  const numberOfBubbles = 21; // Adjust number of bubbles as needed
+
+  for (let i = 0; i < numberOfBubbles; i++) {
+    const bubble = document.createElement('div');
+    bubble.classList.add('bubble');
+    bubble.style.left = Math.random() * window.innerWidth + 'px';
+    bubble.style.animationDelay = Math.random() * 5 + 's'; // Randomize animation delay
+    bubble.style.animationDuration = (Math.random() * 4 + 1) + 's'; // Randomize animation duration
+    container.appendChild(bubble);
+  }
+}
+
+</script>
+   
+</head>
+<body style="background-color:  rgb(247, 246, 248);">
+    <head>
+        <br><br>
+        <div class="topnav">
+                   
+            <a href="#contact">Contacts</a>
+            <a href="#blogs">Blogs |</a>
+            <a href="#news">About |</a>
+            <a class="active" href="#home">Home |</a>
+            </div>
+         <br><br>
+        </head>
+
+        
+        <div class="box">
+           
+           <center><h1> Hi, I'm Peter</h1></center>
+    <h2>Geospatial Developer</h2><br>
+    <h2>High level experience in web development <br> and knowledge in producing quality work.</h2><br>
+
+    <center><a href="https://github.com/PETER-NDIRITU"><button style="color: blue; font-family: cursive; font-weight: bold;"  >Download My CV</button></center></a>
+</div>
+
+          <div class="box2">
+                <img src="e:\PiCtUrEs\IMG-20230808-WA0027 - Copy.jpg" alt="" class="IMAGE">
+              </div>
+
+              <!-- Add font awesome icons -->
+<center>
+<a href="#Instagram"><i class="fa fa-instagram" aria-hidden="true" style="color: red;" ></i></a>
+<a href="#WhatsApp"><i class="fa fa-whatsapp" aria-hidden="true" style="color: green;"></i></a>
+<a href="#Email"><i class="fa fa-envelope-o" aria-hidden="true" style="color: red;"></i></a>
+<a href="#LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true" style="color: blue;"></i></a></center>
+
+<div class="container">
+    <!-- Content goes here -->
+  </div><br>
+
+
+        <div class="footer">
+            <h3> &copy; P M &nbsp; 2024 </h3>
+            </div>
+</body>
+</html>
